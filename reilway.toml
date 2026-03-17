@@ -1,0 +1,6 @@
+[build]
+
+builder = "npsix"
+
+[deploy]
+startCommand = "pip install -r requirements.txt && python main.py"

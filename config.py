@@ -9,4 +9,4 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 SESSION_STRING = os.getenv("SESSION_STRING", "")
 ADMIN_ID = [int(x) for x in os.getenv("ADMIN_ID", "0").split(",")]
 # Kanallarni vergul bilan ajratib yozing: "@kanal1,@kanal2"
-CHANNELS = os.getenv("CHANNELS", "").split(",")
+CHANNELS = [ch.strip() for ch in os.getenv("CHANNELS", "").split(",")]

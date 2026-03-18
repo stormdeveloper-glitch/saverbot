@@ -1,6 +1,6 @@
 [build]
 
-builder = "npsix"
+builder = "nixpacks"
 
 [deploy]
 startCommand = "pip install -r requirements.txt && python main.py"
